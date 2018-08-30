@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/untitled7.dir/fractal_mandelbrot.c.o"
   "CMakeFiles/untitled7.dir/evets_on_win.c.o"
   "CMakeFiles/untitled7.dir/fractal_julia.c.o"
+  "CMakeFiles/untitled7.dir/fractal_serpinskogo.c.o"
   "untitled7.pdb"
   "untitled7"
 )

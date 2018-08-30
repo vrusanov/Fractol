@@ -12,6 +12,7 @@ SRC_FILES = 	main.c \
 				start_fractal.c \
 				evets_on_win.c \
 				fractal_julia.c \
+				fractal_serpinskogo.c \
 
 BIN_FILES = $(SRC_FILES:.c=.o)
 

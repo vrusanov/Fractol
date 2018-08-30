@@ -12,6 +12,12 @@ void        choice_fractal(t_fract *fract)
         option_julia(fract);
         mandelbrot_func(fract);
     }
+    else if (fract->name_flag == 2)
+    {
+        option_serpinsky(fract);
+        serpinsky_func(fract);
+    }
+
 }
 
 

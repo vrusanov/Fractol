@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/vrusanov/CLionProjects/untitled7/evets_on_win.c" "/Users/vrusanov/CLionProjects/untitled7/cmake-build-debug/CMakeFiles/untitled7.dir/evets_on_win.c.o"
   "/Users/vrusanov/CLionProjects/untitled7/fractal_julia.c" "/Users/vrusanov/CLionProjects/untitled7/cmake-build-debug/CMakeFiles/untitled7.dir/fractal_julia.c.o"
   "/Users/vrusanov/CLionProjects/untitled7/fractal_mandelbrot.c" "/Users/vrusanov/CLionProjects/untitled7/cmake-build-debug/CMakeFiles/untitled7.dir/fractal_mandelbrot.c.o"
+  "/Users/vrusanov/CLionProjects/untitled7/fractal_serpinskogo.c" "/Users/vrusanov/CLionProjects/untitled7/cmake-build-debug/CMakeFiles/untitled7.dir/fractal_serpinskogo.c.o"
   "/Users/vrusanov/CLionProjects/untitled7/main.c" "/Users/vrusanov/CLionProjects/untitled7/cmake-build-debug/CMakeFiles/untitled7.dir/main.c.o"
   "/Users/vrusanov/CLionProjects/untitled7/start_fractal.c" "/Users/vrusanov/CLionProjects/untitled7/cmake-build-debug/CMakeFiles/untitled7.dir/start_fractal.c.o"
   "/Users/vrusanov/CLionProjects/untitled7/validation.c" "/Users/vrusanov/CLionProjects/untitled7/cmake-build-debug/CMakeFiles/untitled7.dir/validation.c.o"

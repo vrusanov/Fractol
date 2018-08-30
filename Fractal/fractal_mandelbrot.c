@@ -33,7 +33,6 @@ void            if_mandelbrot(t_fract *fract, int *flag)
     }
 }
 
-
 int             calculs_pixel(int x, int y)
 {
     int count_pix;
@@ -50,6 +49,17 @@ int             calculs_pixel(int x, int y)
 //    return (0);
 }
 
+//int		calculs_pixel_for_serp(t_fract *fract, int x, int y)
+//{
+//    if (y > 0)
+//        return (y * fract->size_line + x * 4);
+//    else if (y == 0)
+//        return (fract->size_line + x * 4);
+//    else if (y < 0)
+//        return (0);
+//    return (0);
+//}
+
 void            fract_help_for_put(t_fract * fract, int x, int y)
 {
     int count_pxl;
@@ -62,9 +72,10 @@ void            fract_help_for_put(t_fract * fract, int x, int y)
     else
     {
         count_pxl = calculs_pixel(x + WIDTH / 2, (y + HEIGHT / 2) - 1);
-        put_color_pixel_mndlbrt(fract, count_pxl, (0xffef / fract->deep * fract->iter), 0);
+        put_color_pixel_mndlbrt(fract, count_pxl, (fract->iter * 225 * fract->deep) % 100, 0);
     }
 }
+
 void            put_color_pixel_mndlbrt(t_fract *fract, int count_pxl, int color, int flag)
 {
 
@@ -76,9 +87,9 @@ void            put_color_pixel_mndlbrt(t_fract *fract, int count_pxl, int color
     }
     else
     {
-        fract->addr[count_pxl] = color + 20;
-        fract->addr[count_pxl + 1] = color - 30;
-        fract->addr[count_pxl + 2] = color;
+        fract->addr[count_pxl] = color * 265 >> 8;
+        fract->addr[count_pxl + 1] = color * 265 << 8;
+        fract->addr[count_pxl + 2] = color * 265;
     }
 }
 

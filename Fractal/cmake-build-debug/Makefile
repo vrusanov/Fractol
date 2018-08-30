@@ -204,6 +204,33 @@ fractal_mandelbrot.c.s:
 	$(MAKE) -f CMakeFiles/untitled7.dir/build.make CMakeFiles/untitled7.dir/fractal_mandelbrot.c.s
 .PHONY : fractal_mandelbrot.c.s
 
+fractal_serpinskogo.o: fractal_serpinskogo.c.o
+
+.PHONY : fractal_serpinskogo.o
+
+# target to build an object file
+fractal_serpinskogo.c.o:
+	$(MAKE) -f CMakeFiles/untitled7.dir/build.make CMakeFiles/untitled7.dir/fractal_serpinskogo.c.o
+.PHONY : fractal_serpinskogo.c.o
+
+fractal_serpinskogo.i: fractal_serpinskogo.c.i
+
+.PHONY : fractal_serpinskogo.i
+
+# target to preprocess a source file
+fractal_serpinskogo.c.i:
+	$(MAKE) -f CMakeFiles/untitled7.dir/build.make CMakeFiles/untitled7.dir/fractal_serpinskogo.c.i
+.PHONY : fractal_serpinskogo.c.i
+
+fractal_serpinskogo.s: fractal_serpinskogo.c.s
+
+.PHONY : fractal_serpinskogo.s
+
+# target to generate assembly for a file
+fractal_serpinskogo.c.s:
+	$(MAKE) -f CMakeFiles/untitled7.dir/build.make CMakeFiles/untitled7.dir/fractal_serpinskogo.c.s
+.PHONY : fractal_serpinskogo.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -303,6 +330,9 @@ help:
 	@echo "... fractal_mandelbrot.o"
 	@echo "... fractal_mandelbrot.i"
 	@echo "... fractal_mandelbrot.s"
+	@echo "... fractal_serpinskogo.o"
+	@echo "... fractal_serpinskogo.i"
+	@echo "... fractal_serpinskogo.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
