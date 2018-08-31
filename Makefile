@@ -13,6 +13,9 @@ SRC_FILES = 	main.c \
 				evets_on_win.c \
 				fractal_julia.c \
 				fractal_serpinskogo.c \
+				options_for_fractals.c \
+				for_colors.c \
+				evets_on_win_2.c \
 
 BIN_FILES = $(SRC_FILES:.c=.o)
 
