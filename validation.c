@@ -20,7 +20,7 @@ void		validation_fractal_name(char *fract_name, t_fract *fract)
 	else if (ft_strcmp("julia", fract_name) == 0
 			|| ft_strcmp("J", fract_name) == 0)
 		fract->name_flag = 1;
-	else if (ft_strcmp("serpinsky", fract_name) == 0
+	else if (ft_strcmp("serpinski", fract_name) == 0
 			|| ft_strcmp("S", fract_name) == 0)
 		fract->name_flag = 2;
 	else

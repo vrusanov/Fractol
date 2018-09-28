@@ -1,6 +1,8 @@
 NAME = fractol
 
-FLAGS = -Wall -Wextra -Werror -I fractol.h
+HEADER = fractal.h
+
+FLAGS = -Wall -Wextra -Werror -I $(HEADER)
 
 MLX = -lmlx -framework AppKit -framework OpenGl -O3
 
@@ -19,9 +21,9 @@ SRC_FILES = 	main.c \
 
 BIN_FILES = $(SRC_FILES:.c=.o)
 
-all: makelib $(NAME)
+all: libft/libft.a $(NAME)
 
-makelib:
+libft/libft.a:
 	make -C ./libft/
 
 libclean:
@@ -31,10 +33,9 @@ libfclean:
 	make -C ./libft/ fclean
 
 $(NAME): $(BIN_FILES)
-	make -C ./libft/
 	gcc -o $(NAME) $(BIN_FILES) $(FLAGS) $(MLX) $(LIB)
 
-%.o: %.c
+%.o: %.c $(HEADER)
 	gcc $(FLAGS) -c -o $@ $<
 
 clean: libclean
